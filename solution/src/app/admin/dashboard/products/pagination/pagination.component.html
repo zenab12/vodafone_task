@@ -1,0 +1,13 @@
+<nav *ngIf="totalItems > itemsPerPage">
+  <ul class="pagination">
+    <li (click)="goToPreviousPage()" [class.disabled]="currentPage === 1">
+      <a>&laquo;</a>
+    </li>
+    <li *ngFor="let pageNumber of totalPagesArray" (click)="goToPage(pageNumber)" [class.active]="currentPage === pageNumber">
+      <a>{{ pageNumber }}</a>
+    </li>
+    <li (click)="goToNextPage()" [class.disabled]="currentPage === totalPages">
+      <a>&raquo;</a>
+    </li>
+  </ul>
+</nav>

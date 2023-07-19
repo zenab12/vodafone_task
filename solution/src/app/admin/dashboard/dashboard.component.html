@@ -1,0 +1,21 @@
+
+<nav>
+  <ul>
+    <li class="logo"><h1><a routerLink="/admin"><img src="../../../../../assets/images/logo.png" alt=""/> ZienStore</a></h1></li>
+    <li>Hello,<span class="username">admin</span></li>
+  </ul>
+</nav>
+
+<section class="container">
+<app-sidebar></app-sidebar>
+<main class="content">
+  <div class="heading">
+    <h1 [innerHTML]="message" [ngStyle]="{'text-align':textCenter?'center':'','width':textCenter?'100%':'auto'}"></h1>
+    <button *ngIf="flag" class="add-product"  routerLink="products/add">Add Product + </button>
+  </div>
+  <div *ngIf="displayVector">
+    <img src="../../../assets/images/dashboard.svg" alt=""/>
+  </div>
+</main>
+</section>
+<router-outlet></router-outlet>

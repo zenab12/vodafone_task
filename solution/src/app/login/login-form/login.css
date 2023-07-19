@@ -1,0 +1,43 @@
+
+*
+{
+box-sizing: border-box;
+margin:0;padding: 0;
+}
+
+form{
+    display:grid;
+    grid-template-columns: 1;
+    gap:4;
+    margin-top:8px;
+}
+
+label
+{
+  display: block;
+  margin-bottom:4px;
+  color:gray;
+  font-weight:bold;
+  text-transform:capitalize;
+}
+
+input
+{
+  display:block;
+  padding: 4px;
+  width:90%;
+  margin:10px;
+  color:gray;
+  background-color: #fff;
+  border:2px solid gray;
+}
+
+input:focus
+{
+  border:2px solid #ffc100;
+  outline: none;
+}
+::placeholder
+{
+  color:gray;
+}

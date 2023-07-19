@@ -1,0 +1,70 @@
+@import '../.././.././../assets/variables'
+.table-container
+  max-width: 80%
+  width:75%
+  margin: 30px auto
+  overflow: auto
+  border-radius: 4px
+
+  table
+    width: 100%
+    border-collapse: collapse
+    max-height: 300px
+
+    th
+    td
+      padding: 12px
+      text-align: left
+      border-bottom: 1px solid #ccc
+      text-align: center
+      button
+        padding: .3em 1em
+        background: transparent
+        border: none
+        svg
+          width: 24px
+          height: 24px
+          cursor: pointer
+
+      &.desc
+        max-width: 400px
+
+      img
+          width: 40px
+          height: 40px
+
+
+    th
+      background-color: $main-color-dark
+      padding:1.1em 0
+      color: $light-color
+
+
+    tr
+      transition: background-color .3s ease
+      &:nth-of-type(even)
+          background-color: $secondary-color
+          color: $main-color-light
+      &:nth-of-type(odd)
+          background-color: $light-color
+          color: $dark-color
+
+
+      &:hover
+          background-color: $main-color-light
+          color: $secondary-color
+          svg
+            filter: invert(.5) brightness(190%)
+
+
+
+.content
+    margin-left: 13%
+
+@media (max-width:767px)
+
+    .table-container
+        width:80%
+        margin-left:70px
+        max-width: 100%
+

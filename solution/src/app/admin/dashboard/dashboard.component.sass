@@ -1,0 +1,106 @@
+@import "../../../assets/variables"
+nav
+    background: $secondary-color
+    position: fixed
+    top:0
+    left:0
+    width:100%
+    margin-bottom: 2rem
+    z-index: 3
+
+    ul
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: .4em 3em
+        li
+            list-style: none
+            font-size: 1.1em
+            h1
+              cursor: pointer
+            a
+                text-decoration: none
+                color: $main-color-dark
+                font-size: 1.1em
+                font-weight: bold
+                img
+                    width: 2.3em
+                    margin-right: -.5em
+                    vertical-align: middle
+                &:hover
+                    color: $main-color-dark
+                &.active
+                    color: $main-color-dark
+                    border-bottom: .2em solid $main-color-dark
+                    padding-bottom: .2em
+                    transition: all .3s
+            span
+                color: $main-color
+                font-size: 1.1em
+                font-weight: bold
+                cursor: pointer
+main
+  width:85%
+  margin:4rem 0 auto
+  margin-left: -25px
+  img
+    width:50%
+    display: block
+    margin: 20px auto
+  .heading
+    padding-top: 1.5em
+    display: flex
+    justify-content: space-between
+    align-items: center
+    h1
+      font-size: 1.5em
+      font-weight: bold
+      text-transform: capitalize
+      color:$dark-color
+      span
+          color: $main-color
+
+    button
+      padding: .51em 2em
+      border: none
+      background-color: $main-color
+      color: $light-color
+      cursor: pointer
+      border-radius: .25em
+      transition: all 0.3s linear
+      font-size: 1em
+      font-weight: bold
+      text-transform: capitalize
+      &:hover
+        background-color: $main-color-dark
+        transition: all 0.3s linear
+        svg
+          fill: $light-color
+
+.container
+    display: grid
+    grid-template-columns: 1fr 5fr
+    transition: margin-left 0.3s ease
+    height: 100%
+
+
+
+@media (max-width:920px)
+    nav
+      ul
+        padding-left: 10px
+      li
+          font-size: 1rem!important
+          a
+            font-size: 1rem!important
+    main
+      width:100%
+      margin-left: 0px
+      .heading
+        flex-direction: column
+        justify-content: center
+        h1
+          font-size: 1.2em
+          margin-bottom: 10px
+      button
+        width:270px

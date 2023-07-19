@@ -1,0 +1,174 @@
+<form
+  [formGroup]="addProductForm"
+  (ngSubmit)="onSubmit()"
+>
+  <div>
+    <label for="title">title:</label>
+    <input
+      type="text"
+      id="title"
+      formControlName="title"
+      placeholder="Lenove legion 5 pro"
+      class="form-control"
+      [ngClass]="{
+        'error': title?.invalid && (title?.dirty || title?.touched)}"
+    />
+
+    <ul
+      *ngIf="title?.invalid && (title?.dirty || title?.touched)"
+    >
+      <li *ngIf="title?.errors?.['required']">title is required.</li>
+      <li *ngIf="title?.errors?.['minlength']">
+        title must be at least 4 characters long.
+      </li>
+      <li *ngIf="title?.errors?.['maxlength']">
+        title must be less than 50 characters.
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <label for="price">price:</label>
+    <input
+      type="text"
+      id="price"
+      formControlName="price"
+      placeholder="20000"
+      min="1"
+      class="form-control"
+      [ngClass]="{
+        'error': price?.invalid && (price?.dirty || price?.touched)}"
+    />
+
+    <ul
+      *ngIf="price?.invalid && (price?.dirty || price?.touched)"
+    >
+      <li *ngIf="price?.errors?.['required']">price is required.</li>
+      <li *ngIf="price?.errors?.['pattern']">price is numbers only.</li>
+      <li *ngIf="price?.errors?.['min']">minimum price is 1.</li>
+
+    </ul>
+  </div>
+
+  <div>
+    <label for="image">image:</label>
+    <input
+      type="text"
+      id="image"
+      formControlName="image"
+      placeholder="image link here"
+      class="form-control"
+      [ngClass]="{
+        'error': image?.invalid && (image?.dirty || image?.touched)}"
+    />
+
+    <ul
+      *ngIf="image?.invalid && (image?.dirty || image?.touched)"
+    >
+      <li *ngIf="image?.errors?.['required']">image is required.</li>
+    </ul>
+  </div>
+
+
+  <div>
+    <label for="category">category:</label>
+
+    <select  id="category"
+    formControlName="category"
+    placeholder="electronics"
+    class="form-control"
+    [ngClass]="{
+      'error': category?.invalid && (category?.dirty || category?.touched)}" >
+
+        <option disabled>select category</option>
+        <option selected hidden>select category</option>
+        <option *ngFor="let category of categoriesNames">
+            {{category}}
+        </option>
+    </select>
+
+    <ul
+      *ngIf="category?.invalid && (category?.dirty || category?.touched)"
+    >
+      <li *ngIf="category?.errors?.['required']">category is required.</li>
+
+    </ul>
+  </div>
+
+
+
+  <div>
+    <label for="ratingRate">ratingRate:</label>
+    <input
+      type="text"
+      id="ratingRate"
+      formControlName="ratingRate"
+      placeholder="4.5"
+      class="form-control"
+      [ngClass]="{
+        'error': ratingRate?.invalid && (ratingRate?.dirty || ratingRate?.touched)}"
+    />
+
+    <ul
+      *ngIf="ratingRate?.invalid && (ratingRate?.dirty || ratingRate?.touched)"
+    >
+      <li *ngIf="ratingRate?.errors?.['required']">ratingRate is required.</li>
+      <li *ngIf="ratingRate?.errors?.['pattern']">ratingRate is numbers only.</li>
+      <li *ngIf="ratingRate?.errors?.['min']">minimum ratingRate is 0.</li>
+      <li *ngIf="ratingRate?.errors?.['max']">maximum ratingRate is 5.</li>
+
+    </ul>
+  </div>
+
+
+  <div>
+    <label for="ratingCount">ratingCount:</label>
+    <input
+      type="text"
+      id="ratingCount"
+      formControlName="ratingCount"
+      placeholder="200"
+      class="form-control"
+      [ngClass]="{
+        'error': ratingCount?.invalid && (ratingCount?.dirty || ratingCount?.touched)}"
+    />
+
+    <ul
+      *ngIf="ratingCount?.invalid && (ratingCount?.dirty || ratingCount?.touched)"
+    >
+    <li *ngIf="ratingCount?.errors?.['required']">ratingCount is required.</li>
+    <li *ngIf="ratingCount?.errors?.['pattern']">ratingCount is numbers only.</li>
+    <li *ngIf="ratingCount?.errors?.['min']">ratingCount ratingRate is 0.</li>
+    <li *ngIf="ratingCount?.errors?.['min']">ratingCount ratingRate is 5.</li>
+
+    </ul>
+  </div>
+
+  <div>
+    <label for="decription">decription:</label>
+    <textarea
+      id="decription"
+      formControlName="decription"
+      placeholder="decription here ...."
+      class="form-control"
+      rows="5"
+      [ngClass]="{
+        'error': decription?.invalid && (decription?.dirty || decription?.touched)}"
+    >
+    </textarea>
+
+    <ul
+      *ngIf="decription?.invalid && (decription?.dirty || decription?.touched)"
+    >
+      <li *ngIf="decription?.errors?.['required']">decription is required.</li>
+    </ul>
+  </div>
+
+
+  <button
+    type="submit"
+  >
+    <span> Add 🤑</span>
+  </button>
+
+</form>
