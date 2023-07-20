@@ -1,0 +1,15 @@
+<div class="container">
+
+<div class="product">
+  <img [src]="product?.image" [alt]="product?.title" class="product-image">
+  <div class="product-details">
+  <h3 class="product-name">{{ product?.title }}</h3>
+  <p class="product-description">{{ product?.description }}</p>
+  <p class="product-price">{{ product?.price | currency }}</p>
+  <div class="product-rank">
+    <div class="rating"><img src="../../../assets/images/star.svg"> <span> {{product.rating.rate}} </span></div>
+    <div class="rating"><img src="../../../assets/images/user.svg"> <span>{{product.rating.count}}</span></div>
+  </div>
+</div>
+</div>
+</div>

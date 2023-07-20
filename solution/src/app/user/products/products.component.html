@@ -1,1 +1,23 @@
-<p>products works!</p>
+<section class="products">
+<select #cat (change)="filterItemsByCategory(cat.value)">
+  <option value="">All Categories</option>
+  <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+</select>
+
+<!-- List filtered items -->
+<div class="grid">
+<div class="product-card"  *ngFor="let item of filteredProducts">
+    <div class="product-image">
+      <img src={{item.image}} alt="Product Image" >
+    </div>
+    <h3 class="product-name">{{item.title|slice:0:20}}...</h3>
+    <p class="product-description">{{item.description|slice:0:60}}...</p>
+    <span class="product-price">{{item.price|currency}}</span>
+    <div class="product-rank">
+      <div class="rating"><img src="../../../assets/images/star.svg"> <span> {{item.rating.rate}} </span></div>
+      <div class="rating"><img src="../../../assets/images/user.svg"> <span>{{item.rating.count}}</span></div>
+    </div>
+    <button [routerLink]="['/user/products', item.id]" class="view-details-btn">View Details</button>
+</div>
+</div>
+</section>

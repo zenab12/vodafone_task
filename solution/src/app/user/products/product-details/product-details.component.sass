@@ -1,0 +1,63 @@
+@import "../../../../assets/variables"
+.container
+  display: flex
+  justify-content: center
+  align-content: center
+.product
+  max-width: 800px
+  width:800px
+  margin: 0 auto
+  padding: 16px
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  display: flex
+  gap: 16px
+  border-radius: 16px
+  height: auto
+  margin-top: 10rem
+
+  &-details
+    background: $secondary-color
+    border-radius: 16px
+    padding: 20px
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+  .product-image
+    width: 200px
+    height:200px
+    border-radius: 8px
+
+
+  .product-name
+    font-size: 1.5rem
+    margin-top: 12px
+    color: $main-color-dark
+
+
+  .product-description
+    color: $dark-color
+    margin-top: 8px
+
+
+  .product-price
+    font-weight: bold
+    margin-top: 8px
+    display: block
+    color: $main-color
+
+  .product-rank
+    width:100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 10px
+    color: $main-color-dark
+    div
+      display: inline-flex
+      gap:10px
+    img
+      width:15px
+      height:15px
+
+

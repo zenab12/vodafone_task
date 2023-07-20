@@ -1,1 +1,22 @@
-<p>home works!</p>
+<app-navbar></app-navbar>
+<app-header></app-header>
+<section class="features">
+    <div class="card-container">
+      <div class="card-container-photo one">
+        <img src="../../../assets/images/laptop.jpg" alt=""/>
+      </div>
+      <p>
+        Get the best value for your money with our competitive pricing and exclusive discounts.
+      </p>
+    </div>
+    <div class="card-container">
+      <p>
+      Choose <br>  Style
+      </p>
+      <div class="card-container-photo" [routerLink]="['/user/products']">
+        <img src="../../../assets/images/laptop.jpg" alt=""/>
+      </div>
+    </div>
+</section>
+<app-categories></app-categories>
+<app-footer></app-footer>

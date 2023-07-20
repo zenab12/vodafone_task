@@ -1,0 +1,55 @@
+@import "../../../assets/variables"
+
+nav
+  padding:2rem 5rem
+  // border-left:15rem solid $main-color-dark
+  // border-right:15rem solid $main-color-dark
+  background: $secondary-color
+  .container
+    display: flex
+    justify-content: space-between
+    width:80%
+    margin: auto
+    h1
+      a
+        text-decoration: none
+        color: $main-color-dark
+        font-size: 2rem
+        cursor: pointer
+      img
+        width:60px
+        height:50px
+        display: inline-block
+        margin-right: -15px
+        vertical-align: middle
+    ul
+
+      list-style: none
+      padding:0
+      margin:0
+      display: flex
+      align-items: center
+      gap:1rem
+      li
+        padding: 1rem
+        font-size: 1rem
+        a
+          color: $main-color
+          text-decoration: none
+          cursor: pointer
+
+@media (max-width: 767px)
+  nav
+    padding: .5rem
+    border-width: 0px 10px
+    .container
+      width:100%
+      h1
+        a
+          font-size: 1.2rem
+      ul
+        gap: 0.1rem
+        li
+          a
+          font-size: .9rem
+

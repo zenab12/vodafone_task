@@ -12,6 +12,7 @@ import { UserModule } from './user/user.module';
 import { AdminModule } from './admin/admin.module';
 import { ErrorComponent } from './pages/error/error.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProductDetailsComponent } from './products/product-details/product-details.component';
 // import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     LoginFormComponent,
     ErrorComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,

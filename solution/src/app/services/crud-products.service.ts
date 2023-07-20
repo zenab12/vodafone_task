@@ -28,6 +28,10 @@ export class CrudProductsService {
     return this.http.post<any>(this.apiUrl2, product, httpOptions);
   }
 
+  getproductById(id:number){
+      return this.http.get(`${this.apiUrl3}`).subscribe((data:any)=> [...data].find((product: any) => product.id === id))
+  }
+
   updateProduct(id: number, product: any) {
     return this.http.put(`${this.apiUrl2}/${id}`, product);
   }
@@ -38,7 +42,8 @@ export class CrudProductsService {
 
 
   getProductsByCategory(category:string){
-    return this.http.get(`${this.apiUrl3}/${category}`);
+    return this.http.get(`${this.apiUrl3}`).subscribe((data:any)=>
+   { return data.filter((item:any)=>item.category===category)});
   }
 
   getCategories(){

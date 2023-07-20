@@ -13,32 +13,27 @@ const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
-    children:[
-  {
-    path: 'products',
-    component: ProductsComponent,
-    data: { showParent: true },
     children: [
       {
-        path: 'add',
-        component: AddFormComponent,
-        pathMatch: 'full'
+        path: 'products',
+        component: ProductsComponent,
+        data: { showParent: true },
+        children: [
+          {
+            path: 'add',
+            component: AddFormComponent,
+            pathMatch: 'full',
+          },
+          {
+            path: 'edit/:id',
+            component: EditFormComponent,
+            pathMatch: 'full',
+          },
+        ],
       },
-      {
-        path: 'edit/:id',
-        component: EditFormComponent,
-        pathMatch: 'full'
-      },
-
-      // {
-      //   path: '',
-      //   redirectTo: '',
-      //   pathMatch:'full'
-      // }
     ],
   },
-
-]}];
+];
 
 @NgModule({
   declarations: [
@@ -49,7 +44,7 @@ const routes: Routes = [
     SidebarComponent,
     PaginationComponent,
   ],
-  imports: [CommonModule,ReactiveFormsModule ,RouterModule.forChild(routes)],
+  imports: [CommonModule, ReactiveFormsModule, RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
 export class AdminModule {}
