@@ -32,7 +32,7 @@ Before you begin, ensure you have the following installed on your development ma
     ```
  - Navigate to the project directory:
     ```
-    cd angular-project
+    cd solution
     ```
  - Install the project dependencies:
     ```
@@ -45,6 +45,10 @@ After completing the installation, you can run the project locally with the foll
   
   ```
   ng serve
+  ```
+- Run JSON server from here
+  ```
+    npx json-server ./src/app/server/db.json
   ```
 
 This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:4200/`.
