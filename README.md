@@ -1,4 +1,4 @@
-# Vodafone Angular Project Task 🚀✌️
+![localhost_4200_user(Nest Hub Max)](https://github.com/zenab12/vodafone_task/assets/78083890/0d6a4d68-eaf4-420b-a98b-f23a2731904b)# Vodafone Angular Project Task 🚀✌️
 
 ### The project is e-commerce 🛍️🛒 website aims to make two interfaces one for admin and another for user.
 ## Table of Contents 📑
@@ -41,7 +41,7 @@ Before you begin, ensure you have the following installed on your development ma
 
 ### Usage 🚀
 
-After completing the installation, you can run the project locally with the following command:
+- After completing the installation, you can run the project locally with the following command:
   
   ```
   ng serve
@@ -78,10 +78,14 @@ This will start a local development server, and you can access the application b
 
 - ### final_screen_of_projects
   - login page
+    
     <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/09fce079-f969-4230-9828-3d88bb409f6b">
 
   - User view
+    
+    <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/e46490d5-1a01-4158-a705-766bf0d03817">
     <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/b89574b9-6e64-4e6b-83ea-c768a5576856">
+    <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/7ef07569-c4be-4c57-b89c-7863788159e6">
 
   - Admin view
     
