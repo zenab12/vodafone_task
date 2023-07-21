@@ -77,6 +77,12 @@ This will start a local development server, and you can access the application b
    - product details page : more details about product
 
 - ### final_screen_of_projects
+  - login page
+    <img width="900" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/09fce079-f969-4230-9828-3d88bb409f6b">
+
+  - User view
+    <img width="900" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/b89574b9-6e64-4e6b-83ea-c768a5576856">
+
   - Admin view
     
       <img width="900" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/6f2999b5-db38-406c-a466-bc0c1a9bc0f7">
