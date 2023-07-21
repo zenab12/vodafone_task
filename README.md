@@ -1,9 +1,9 @@
 
 ### The project is e-commerce 🛍️🛒 website aims to make two interfaces one for admin and another for user.
 ## Table of Contents 📑
-  - [Getting Started](#Getting_Started)
+  - [Getting Started](###Getting_Started)
      - [Prerequisites](#Prerequisites)
-     - [Installation](Installation)
+     - [Installation](###Installation)
   - [Usage](Usage)
   - [Features](Features)
   - [final screen of projects](final_screen_of_projects)
