@@ -1,4 +1,3 @@
-![localhost_4200_user(Nest Hub Max)](https://github.com/zenab12/vodafone_task/assets/78083890/0d6a4d68-eaf4-420b-a98b-f23a2731904b)# Vodafone Angular Project Task 🚀✌️
 
 ### The project is e-commerce 🛍️🛒 website aims to make two interfaces one for admin and another for user.
 ## Table of Contents 📑
