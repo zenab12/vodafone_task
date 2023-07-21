@@ -115,8 +115,8 @@ Please ensure your pull request follows the project's coding conventions and inc
 Contact 📩
 If you have any questions or feedback regarding this project, feel free to get in touch:
 
-  Email: zenabm410@gmail.com
-  linkedin: [@zienabmuhammad](https://www.linkedin.com/in/zienabmuhammad)
-  GitHub: [@zenab12](https://github.com/zenab12)
+  - Email: zenabm410@gmail.com
+  - linkedin: [@zienabmuhammad](https://www.linkedin.com/in/zienabmuhammad)
+  - GitHub: [@zenab12](https://github.com/zenab12)
 
 Feel free to modify this README file to suit your project's specific needs. Happy coding! 🚀
