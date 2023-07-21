@@ -86,10 +86,10 @@ This will start a local development server, and you can access the application b
   - Admin view
     
       <img width="900" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/6f2999b5-db38-406c-a466-bc0c1a9bc0f7">
-      <img width="450" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/7356c2b4-7c2f-413f-875d-1d9a63bc4434">
-      <img width="450" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/dad4c047-1695-4ef0-bf74-971ed3e873fc">
-      <img width="450" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/360dd4a8-dd0e-467d-afd3-ef21cdba3733">
-      <img width="450" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/b906975c-aaa9-4ab2-88cb-064d6dfc86f3">
+      <img width="350" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/7356c2b4-7c2f-413f-875d-1d9a63bc4434">
+      <img width="350" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/dad4c047-1695-4ef0-bf74-971ed3e873fc">
+      <img width="350" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/360dd4a8-dd0e-467d-afd3-ef21cdba3733">
+      <img width="350" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/b906975c-aaa9-4ab2-88cb-064d6dfc86f3">
 
 ### Contributing ✍️
 
