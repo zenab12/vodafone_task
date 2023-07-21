@@ -1,7 +1,7 @@
-# Vodafone Angular Project Task
+# Vodafone Angular Project Task 🚀✌️
 
-### The project is e-commerce website aims to make two interfaces one for admin and another for user.
-## Table of Contents 
+### The project is e-commerce 🛍️🛒 website aims to make two interfaces one for admin and another for user.
+## Table of Contents 📑
   - [Getting Started](Getting_Started)
      - [Prerequisites](Prerequisites)
      - [Installation](Installation)
@@ -11,18 +11,18 @@
   - [License](License)
   - [Acknowledgments](Acknowledgments)
 
-### Getting_Started
+### Getting_Started 🔑
 
 To get the project up and running on your local machine, follow the instructions below.
 
-### Prerequisites
+### Prerequisites 🔱 
     
 Before you begin, ensure you have the following installed on your development machine:
 
   - Node.js - Download and install the latest version of Node.js, which includes `npm (Node Package Manager)`.
   - Angular CLI - Install the Angular Command Line Interface globally by running `npm install -g @angular/cli`.
 
-### Installation
+### Installation 🌐
 
  - Clone this repository to your local machine using:
 
@@ -38,7 +38,7 @@ Before you begin, ensure you have the following installed on your development ma
     npm install
     ```
 
-### Usage
+### Usage 🚀
 
 After completing the installation, you can run the project locally with the following command:
   
@@ -48,7 +48,7 @@ After completing the installation, you can run the project locally with the foll
 
 This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:4200/`.
 
-### Features
+### Features ✌️❤️
 - #### general features 
   - **Authentication** : Login page that sure you are admin or user and based on your role you will get user or admin interface
   - **LazyLoading** : the project consist of Three modules one for user , one for admin and the other one for app
@@ -71,7 +71,7 @@ This will start a local development server, and you can access the application b
    - filteration : user can filter products based on category
    - product details page : more details about product 
 
-### Contributing
+### Contributing ✍️
 
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
@@ -83,16 +83,16 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 
 Please ensure your pull request follows the project's coding conventions and includes relevant tests.
 
-### License
+### License 💼
 [@vodafone](https://github.com/Vodafone)
 
-### Acknowledgments
+### Acknowledgments 💫🌟
 - angular frame work
 - sass preprocessor
 - json server
 - fake store api
 
-Contact
+Contact 📩
 If you have any questions or feedback regarding this project, feel free to get in touch:
 
   Email: zenabm410@gmail.com
