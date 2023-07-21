@@ -28,7 +28,7 @@ Before you begin, ensure you have the following installed on your development ma
  - Clone this repository to your local machine using:
 
     ```
-    git clone https://github.com/your-username/angular-project.git
+    git clone https://github.com/zenab12/vodafone_task.git
     ```
  - Navigate to the project directory:
     ```
