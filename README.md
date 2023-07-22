@@ -5,11 +5,12 @@
      - [Prerequisites](#prerequisites)
      - [installation](#installation)
   - [Usage](#usage)
-  - [features](#features)
+  - [Features](#features)
   - [final screen of projects](#final_screen_of_projects)
-  - [contributing](#contributing)
-  - [license](#license)
-  - [acknowledgments](#acknowledgments)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+  - [Contact](#contact)
  
 
 <h3 id="start">Getting_Gtarted 🔑</h3>
@@ -51,7 +52,7 @@ Before you begin, ensure you have the following installed on your development ma
   - This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:3000/`.
 
 
-### features ✌️❤️
+<h3 id=" features"> Features ✌️❤️</h3>
 - #### general features 
   - **Authentication** : Login page that sure you are admin or user and based on your role you will get user or admin interface
   - **LazyLoading** : the project consist of Three modules one for user , one for admin and the other one for app
@@ -93,7 +94,7 @@ Before you begin, ensure you have the following installed on your development ma
       <img width="350" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/360dd4a8-dd0e-467d-afd3-ef21cdba3733">
       <img width="350" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/b906975c-aaa9-4ab2-88cb-064d6dfc86f3">
 
-### contributing ✍️
+<h3 ID="contributing">Contributing ✍️</h3>
 
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
@@ -105,7 +106,7 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 
 Please ensure your pull request follows the project's coding conventions and includes relevant tests.
 
-### license 💼
+<h3 id="license">License 💼</h3>
 [@vodafone](https://github.com/Vodafone)
 
 ### acknowledgments 💫🌟
@@ -114,7 +115,7 @@ Please ensure your pull request follows the project's coding conventions and inc
 - json server
 - fake store api
 
-Contact 📩
+<h3 id="contact">Contact 📩</h3>
 If you have any questions or feedback regarding this project, feel free to get in touch:
 
   - Email: zenabm410@gmail.com
