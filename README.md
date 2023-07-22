@@ -25,7 +25,6 @@ Before you begin, ensure you have the following installed on your development ma
 <h3 id="installation">installation 🌐</h3>
  
  Clone this repository to your local machine using:
-
     ```
     git clone https://github.com/zenab12/vodafone_task.git
     ```
@@ -53,6 +52,15 @@ Install the project dependencies:
   ```
   - This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:3000/`.
 
+  To get the user view login with : 
+  
+   - username:user 
+   - password:user 
+    
+  To get the admin view login with : 
+  
+  - username:admin 
+  - password:admin 
 
 <h3 id="features"> Features ✌️❤️</h3>
 
