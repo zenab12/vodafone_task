@@ -8,9 +8,9 @@
   - [usage](#usage)
   - [features](#features)
   - [final screen of projects](#final_screen_of_projects)
-  - [Contributing](#Contributing)
-  - [License](#License)
-  - [Acknowledgments](#Acknowledgments)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
 
 ### getting started 🔑
 To get the project up and running on your local machine, follow the instructions below.
@@ -21,7 +21,7 @@ Before you begin, ensure you have the following installed on your development ma
   - Node.js - Download and install the latest version of Node.js, which includes `npm (Node Package Manager)`.
   - Angular CLI - Install the Angular Command Line Interface globally by running `npm install -g @angular/cli`.
 
-# installation 🌐
+### installation 🌐
  - Clone this repository to your local machine using:
 
     ```
@@ -93,7 +93,7 @@ Before you begin, ensure you have the following installed on your development ma
       <img width="350" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/360dd4a8-dd0e-467d-afd3-ef21cdba3733">
       <img width="350" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/b906975c-aaa9-4ab2-88cb-064d6dfc86f3">
 
-### Contributing ✍️
+### contributing ✍️
 
 Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
 
@@ -105,10 +105,10 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 
 Please ensure your pull request follows the project's coding conventions and includes relevant tests.
 
-### License 💼
+### license 💼
 [@vodafone](https://github.com/Vodafone)
 
-### Acknowledgments 💫🌟
+### acknowledgments 💫🌟
 - angular frame work
 - sass preprocessor
 - json server
