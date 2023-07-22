@@ -1,6 +1,7 @@
 
 ### The project is e-commerce 🛍️🛒 website aims to make two interfaces one for admin and another for user.
 ## Table of Contents 📑
+
   - [Getting Started](#Getting-Started)
      - [Prerequisites](#Prerequisites)
      - [Installation](#Installation)
@@ -41,12 +42,14 @@ Before you begin, ensure you have the following installed on your development ma
   ```
   ng serve
   ```
+  - This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:4200/`.
+
 - Run JSON server from here
   ```
     npx json-server ./src/app/server/db.json
   ```
+  - This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:3000/`.
 
-This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:4200/`.
 
 ### Features ✌️❤️
 - #### general features 
