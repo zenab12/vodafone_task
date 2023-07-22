@@ -18,14 +18,22 @@ export class CategoriesComponent implements OnInit {
  products:Product[] = []
  filteredProducts:any = []
  lengths:any[]=[]
-
+ isLoading:boolean=true
 ngOnInit(){
   this.productService.getCategories().subscribe((data:any) => this.categories.push(...data));
   this.productService.getProducts().subscribe((data:any)=>
   this.products.push(...data));
+
 }
 ngDoCheck(){
   this.calculateProductLengthForEachCategory();
+  setTimeout(()=>{
+
+    if(this.categories.length>0){
+      this.isLoading=false
+    }
+
+  },4000)
   }
 
   getProductsByCategory(category:string){

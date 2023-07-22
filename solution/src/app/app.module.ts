@@ -13,7 +13,6 @@ import { AdminModule } from './admin/admin.module';
 import { ErrorComponent } from './pages/error/error.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedDataService } from './services/sharedService.service';
-import { LoaderComponent } from './loader/loader.component';
 // import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
@@ -21,7 +20,6 @@ import { LoaderComponent } from './loader/loader.component';
     LoginComponent,
     LoginFormComponent,
     ErrorComponent,
-    LoaderComponent,
   ],
   imports: [
     BrowserModule,

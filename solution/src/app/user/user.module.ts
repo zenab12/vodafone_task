@@ -11,6 +11,7 @@ import { CategoriesComponent } from './products/categories/categories.component'
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
 import { PaginationComponent } from './products/pagination/pagination.component';
 import { ProductskeletonComponent } from './products/productskeleton/productskeleton.component';
+import { LoaderComponent } from './loader/loader.component';
 
 const routes: Routes = [
   {
@@ -32,7 +33,9 @@ const routes: Routes = [
     CategoriesComponent,
     ProductDetailsComponent,
     PaginationComponent,
-    ProductskeletonComponent
+    ProductskeletonComponent,
+    LoaderComponent
+
 
   ],
   imports: [CommonModule,FormsModule,ReactiveFormsModule,RouterModule.forChild(routes)],
