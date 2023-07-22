@@ -4,12 +4,12 @@
   - [Getting Started](#Getting-Started)
      - [Prerequisites](#Prerequisites)
      - [Installation](#Installation)
-  - [Usage](Usage)
-  - [Features](Features)
-  - [final screen of projects](final_screen_of_projects)
-  - [Contributing](Contributing)
-  - [License](License)
-  - [Acknowledgments](Acknowledgments)
+  - [Usage](#Usage)
+  - [Features](#Features)
+  - [final screen of projects](#final_screen_of_projects)
+  - [Contributing](#Contributing)
+  - [License](#License)
+  - [Acknowledgments](#Acknowledgments)
 
 ### Getting Started 🔑
 
