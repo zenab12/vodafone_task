@@ -53,6 +53,13 @@ Install the project dependencies:
   ```
   - This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:3000/`.
 
+  To get the user view login with : 
+    - username:user 
+    - password:user 
+  
+  To get the admin view login with : 
+    - username:admin 
+    - password:admin 
 
 <h3 id="features"> Features ✌️❤️</h3>
 
