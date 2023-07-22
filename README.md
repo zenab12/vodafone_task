@@ -23,36 +23,39 @@ Before you begin, ensure you have the following installed on your development ma
   - Angular CLI - Install the Angular Command Line Interface globally by running `npm install -g @angular/cli`.
 
 <h3 id="installation">installation 🌐</h3>
- - Clone this repository to your local machine using:
+ 
+ Clone this repository to your local machine using:
 
     ```
     git clone https://github.com/zenab12/vodafone_task.git
     ```
- - Navigate to the project directory:
+Navigate to the project directory:
     ```
     cd solution
     ```
- - Install the project dependencies:
+    
+Install the project dependencies:
     ```
     npm install
     ```
 
 <h3 id="usage">Usage 🚀</h3>
-- After completing the installation, you can run the project locally with the following command:
+  
+  After completing the installation, you can run the project locally with the following command:
   
   ```
   ng serve
   ```
-  - This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:4200/`.
-
-- Run JSON server from here
+   - This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:4200/`.
+  Run JSON server from here
   ```
     npx json-server ./src/app/server/db.json
   ```
   - This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:3000/`.
 
 
-<h3 id=" features"> Features ✌️❤️</h3>
+<h3 id="features"> Features ✌️❤️</h3>
+
 - #### general features 
   - **Authentication** : Login page that sure you are admin or user and based on your role you will get user or admin interface
   - **LazyLoading** : the project consist of Three modules one for user , one for admin and the other one for app
