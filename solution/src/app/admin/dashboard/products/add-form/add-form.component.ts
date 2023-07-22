@@ -5,6 +5,7 @@ import { CrudProductsService } from 'src/app/services/crud-products.service';
 import { Location } from '@angular/common';
 import { Category } from '../category.interface';
 import { Product } from '../product.interface';
+import { AddedandUpdatedProductService } from 'src/app/services/addedand-updated-product.service';
 @Component({
   selector: 'app-add-form',
   templateUrl: './add-form.component.html',
@@ -22,7 +23,8 @@ export class AddFormComponent {
     private fb: FormBuilder,
     private prodService: CrudProductsService,
     private router:Router,
-    private cdr:ChangeDetectorRef
+    private cdr:ChangeDetectorRef,
+    private addedService:AddedandUpdatedProductService
   ) {}
   ngOnInit() {
     this.addProductForm = this.fb.group({
@@ -101,9 +103,6 @@ export class AddFormComponent {
     });
   }
 
-
-  @Output() productAdded = new EventEmitter<Product>();
-
   onSubmit() {
     this.flag = false;
     this.isLoading = true
@@ -124,13 +123,13 @@ export class AddFormComponent {
       this.prodService.createProduct(this.productResult).subscribe(
         (data) => {
           this.flag = true;
-          window.location.replace('admin/products')
-          // this.router.navigate(['admin/products']);
+          this.addedService.setAddedProduct(data);
+          this.addedService.setCounter(1);
+          this.router.navigate(['admin/products']);
           this.isLoading = false
         },
         (err) => {
           this.isLoading = false
-
         }
       );
       this.addProductForm.reset();

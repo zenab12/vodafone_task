@@ -7,6 +7,7 @@ import {
   ActivatedRouteSnapshot,
   Router,
 } from '@angular/router';
+import { AddedandUpdatedProductService } from 'src/app/services/addedand-updated-product.service';
 
 @Component({
   selector: 'app-edit-form',
@@ -26,7 +27,8 @@ export class EditFormComponent {
     private fb: FormBuilder,
     private prodService: CrudProductsService,
     private route: ActivatedRoute ,
-    private router:Router
+    private router:Router,
+    private editProductService:AddedandUpdatedProductService
   ) {}
   ngOnInit() {
     this.editProductForm = this.fb.group({
@@ -140,13 +142,16 @@ export class EditFormComponent {
           count: this.ratingCount?.value,
         },
       };
+
       this.prodService.updateProduct(this.id, this.productResult).subscribe(
-        (data) => {
+        (data:any) => {
           this.flag = true;
           this.isLoading = false
-          // this.router.navigate(['/admin/products'])
-          window.location.replace('/admin/products')
-
+          this.editProductService.setUpdatedProduct(data);
+          this.editProductService.setCounter(1);
+          this.router.navigate(['/admin/products'])
+          console.log(data)
+          // window.location.replace('/admin/products')
         },
         (err) => {
         this.isLoading=false

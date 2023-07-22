@@ -11,8 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Product } from './product.interface';
 import { CrudProductsService } from 'src/app/services/crud-products.service';
 import { Router } from '@angular/router';
-import { AddFormComponent } from './add-form/add-form.component';
-// import { PaginationComponent } from './pagination/pagination.component';
+import { AddedandUpdatedProductService } from 'src/app/services/addedand-updated-product.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -20,17 +19,18 @@ import { AddFormComponent } from './add-form/add-form.component';
 })
 export class ProductsComponent implements OnInit {
   showParent: boolean = true;
-  products: Product[] = [];
+  products: any[] = [];
   itemsPerPage: number = 6;
   isLoading: boolean = true;
-  // @ViewChild(PaginationComponent) pagination!:PaginationComponent
   currentPage: number = 1;
+  counter:number=0;
 
   constructor(
     private router: Router,
     private route: ActivatedRoute,
     private productService: CrudProductsService,
-    private cdr:ChangeDetectorRef
+    private cdr:ChangeDetectorRef,
+    private AddedService:AddedandUpdatedProductService
   ) {}
 
   flag = true;
@@ -41,9 +41,9 @@ export class ProductsComponent implements OnInit {
     setTimeout(() => {
       this.currentPage = 1;
     });
-
-
   }
+
+
 
   ngDoCheck(): void {
     const currentRoute = this.route.snapshot;
@@ -61,14 +61,29 @@ export class ProductsComponent implements OnInit {
         break;
     }
 
-
-
     for(let i=0;i<this.totalPages;i++){
-       if(this.totalPagesArray.length<this.totalPages){
-         this.totalPagesArray.push(i+1);
-        console.log(this.totalPagesArray)
-       }
+      if(this.totalPagesArray.length<this.totalPages){
+        if(this.totalPagesArray[i] != i+1 ){
+        this.totalPagesArray.push(i+1);
+        }
       }
+      }
+
+      if(this.AddedService.getCounter()==1){
+      if(this.products.find((item:any)=>item.id !== this.AddedService.getAddedProduct().id) && this.AddedService.getAddedProduct().id !== 0){
+        this.AddedService.setCounter(0)
+        this.products.push(this.AddedService.getAddedProduct());
+      }
+
+      this.products.forEach((item:any)=>{
+          item.id == this.AddedService.getUpdatedProduct().id ? item = this.AddedService.getUpdatedProduct() : item;
+          this.products = this.products.filter((item:any)=>item.id !== this.AddedService.getUpdatedProduct().id)
+          this.products.unshift(this.AddedService.getUpdatedProduct())
+          this.AddedService.setCounter(0)
+      })
+  }
+
+
 
 
   }
