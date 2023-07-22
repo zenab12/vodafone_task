@@ -8,9 +8,9 @@
   - [usage](#usage)
   - [features](#features)
   - [final screen of projects](#final_screen_of_projects)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
+  - [contributing](#contributing)
+  - [license](#license)
+  - [acknowledgments](#acknowledgments)
 
 ### getting started 🔑
 To get the project up and running on your local machine, follow the instructions below.
