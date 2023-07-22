@@ -84,13 +84,15 @@ Install the project dependencies:
     <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/09fce079-f969-4230-9828-3d88bb409f6b">
 
   - User view
-    
-    <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/e46490d5-1a01-4158-a705-766bf0d03817">
-    <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/b89574b9-6e64-4e6b-83ea-c768a5576856">
+
+    <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/405bf6c7-5173-4a91-8fbd-1b5725a8db8c">
+    <img width="700" alt="Screenshot 2023-07-22 132922" src="https://github.com/zenab12/vodafone_task/assets/78083890/3298a373-b9f7-4104-a5d3-4b441c9cd063">
+    <img width="700" alt="Screenshot 2023-07-22 132922" src="https://github.com/zenab12/vodafone_task/assets/78083890/f6e12a9d-32c9-4e2a-9ae3-d7311c7f2563">
     <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/7ef07569-c4be-4c57-b89c-7863788159e6">
 
   - Admin view
     
+      <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/a8e9016c-99f2-4886-ac88-37a871df4518">
       <img width="700" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/6f2999b5-db38-406c-a466-bc0c1a9bc0f7">
       <img width="350" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/7356c2b4-7c2f-413f-875d-1d9a63bc4434">
       <img width="350" alt="Screenshot 2023-07-21 132054" src="https://github.com/zenab12/vodafone_task/assets/78083890/dad4c047-1695-4ef0-bf74-971ed3e873fc">
