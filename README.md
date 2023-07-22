@@ -2,11 +2,11 @@
 ### The project is e-commerce 🛍️🛒 website aims to make two interfaces one for admin and another for user.
 ## Table of Contents 📑
 
-  - [Getting Started](#getting-Started)
+  - [Getting Started](#getting-started)
      - [Prerequisites](#prerequisites)
-     - [Installation](installation)
+     - [Installation](#installation)
   - [Usage](#usage)
-  - [Features](#Features)
+  - [Features](#features)
   - [final screen of projects](#final_screen_of_projects)
   - [Contributing](#Contributing)
   - [License](#License)
@@ -15,13 +15,13 @@
 ### getting started 🔑
 To get the project up and running on your local machine, follow the instructions below.
 
-### Prerequisites 🔱 
+### prerequisites 🔱 
 Before you begin, ensure you have the following installed on your development machine:
 
   - Node.js - Download and install the latest version of Node.js, which includes `npm (Node Package Manager)`.
   - Angular CLI - Install the Angular Command Line Interface globally by running `npm install -g @angular/cli`.
 
-# Installation 🌐
+# installation 🌐
  - Clone this repository to your local machine using:
 
     ```
@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed on your development ma
     npm install
     ```
 
-### Usage 🚀
+### usage 🚀
 - After completing the installation, you can run the project locally with the following command:
   
   ```
@@ -51,7 +51,7 @@ Before you begin, ensure you have the following installed on your development ma
   - This will start a local development server, and you can access the application by opening your web browser and navigating to `http://localhost:3000/`.
 
 
-### Features ✌️❤️
+### features ✌️❤️
 - #### general features 
   - **Authentication** : Login page that sure you are admin or user and based on your role you will get user or admin interface
   - **LazyLoading** : the project consist of Three modules one for user , one for admin and the other one for app
