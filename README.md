@@ -109,7 +109,7 @@ Please ensure your pull request follows the project's coding conventions and inc
 <h3 id="license">License 💼</h3>
 [@vodafone](https://github.com/Vodafone)
 
-### acknowledgments 💫🌟
+<h3 id="acknowledgments"> Acknowledgments 💫🌟</h3>
 - angular frame work
 - sass preprocessor
 - json server
