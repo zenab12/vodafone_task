@@ -2,9 +2,9 @@
 ### The project is e-commerce 🛍️🛒 website aims to make two interfaces one for admin and another for user.
 ## Table of Contents 📑
   - [Getting Started](#start)
-     - [prerequisites](#prerequisites)
+     - [Prerequisites](#prerequisites)
      - [installation](#installation)
-  - [usage](#usage)
+  - [Usage](#usage)
   - [features](#features)
   - [final screen of projects](#final_screen_of_projects)
   - [contributing](#contributing)
@@ -12,16 +12,16 @@
   - [acknowledgments](#acknowledgments)
  
 
-<h3 id="start">getting_started 🔑</h3>
+<h3 id="start">Getting_Gtarted 🔑</h3>
 To get the project up and running on your local machine, follow the instructions below.
 
-### prerequisites 🔱 
+<h3 id="prerequisites">Prerequisites 🔱</h3> 
 Before you begin, ensure you have the following installed on your development machine:
 
   - Node.js - Download and install the latest version of Node.js, which includes `npm (Node Package Manager)`.
   - Angular CLI - Install the Angular Command Line Interface globally by running `npm install -g @angular/cli`.
 
-### installation 🌐
+<h3 id="installation">installation 🌐</h3>
  - Clone this repository to your local machine using:
 
     ```
@@ -36,7 +36,7 @@ Before you begin, ensure you have the following installed on your development ma
     npm install
     ```
 
-### usage 🚀
+<h3 id="usage">Usage 🚀</h3>
 - After completing the installation, you can run the project locally with the following command:
   
   ```
