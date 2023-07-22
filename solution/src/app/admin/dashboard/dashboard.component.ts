@@ -1,7 +1,7 @@
 import { AfterViewChecked, AfterViewInit, Component, DoCheck, OnInit, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { CrudProductsService } from 'src/app/services/crud-products.service';
-import { ProductsComponent } from './products/products.component';
+// import { ProductsComponent } from './products/products.component';
 import { filter } from 'rxjs';
 
 @Component({
@@ -16,10 +16,8 @@ export class DashboardComponent implements DoCheck {
   displayVector:boolean=false
   constructor(private route:ActivatedRoute,private router:Router)
   {}
-
-  ngDoCheck()
-  {
-    const currentRoute = this.router.url;
+  ngDoCheck(): void {
+    const currentRoute = this.router?.url;
     switch(currentRoute)
     {
     case '/admin/products':
@@ -40,7 +38,6 @@ export class DashboardComponent implements DoCheck {
       this.flag=false;
       this.textCenter = true
       this.displayVector =false
-
       this.message = "you can <span>add</span> product here  <span>Sweety </span> 🤗";
       break;
     default:
@@ -49,13 +46,9 @@ export class DashboardComponent implements DoCheck {
       this.textCenter = true
       this.displayVector =false
 
-
       break;
     }
-    console.log(currentRoute);
-    console.log('cc',this.textCenter)
-  }
-
+    }
 
 
 }

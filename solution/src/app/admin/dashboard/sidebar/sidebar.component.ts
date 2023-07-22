@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./sidebar.component.sass']
 })
 export class SidebarComponent {
-  @ViewChild('sidebar') sidebar!: ElementRef;
   constructor(private router:Router){}
   isCollapsed = false;
 

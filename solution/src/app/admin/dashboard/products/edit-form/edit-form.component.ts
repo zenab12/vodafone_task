@@ -20,11 +20,13 @@ export class EditFormComponent {
   categories: Category[] = [];
   categoriesNames: string[] = [];
   id: any;
+  isLoading:boolean=true
 
   constructor(
     private fb: FormBuilder,
     private prodService: CrudProductsService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute ,
+    private router:Router
   ) {}
   ngOnInit() {
     this.editProductForm = this.fb.group({
@@ -67,12 +69,10 @@ export class EditFormComponent {
       ],
     });
     this.getCategories();
-    //  id = this.route.paramMap.get('id');
     this.route.params.subscribe((params: { [x: string]: string | number }) => {
       this.id = +params['id'];
       this.getProduct(this.id);
     });
-    console.log(this.id);
   }
 
   get title() {
@@ -109,8 +109,8 @@ export class EditFormComponent {
         ratingRate: data.rating.rate,
         ratingCount: data.rating.count,
       });
+      this.isLoading=false
 
-      console.log(data);
     });
   }
 
@@ -127,6 +127,7 @@ export class EditFormComponent {
 
   onSubmit() {
     this.flag = false;
+    this.isLoading = true
     if (this.editProductForm.valid) {
       this.productResult = {
         title: this.title?.value,
@@ -142,13 +143,15 @@ export class EditFormComponent {
       this.prodService.updateProduct(this.id, this.productResult).subscribe(
         (data) => {
           this.flag = true;
-          window.location.replace('/admin/products');
+          this.isLoading = false
+          // this.router.navigate(['/admin/products'])
+          window.location.replace('/admin/products')
+
         },
         (err) => {
-          console.log(err);
+        this.isLoading=false
         }
       );
-      this.editProductForm.reset();
       this.flag = false;
     } else {
       this.editProductForm.markAllAsTouched();

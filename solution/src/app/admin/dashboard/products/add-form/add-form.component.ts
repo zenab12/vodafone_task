@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { CrudProductsService } from 'src/app/services/crud-products.service';
 import { Location } from '@angular/common';
 import { Category } from '../category.interface';
+import { Product } from '../product.interface';
 @Component({
   selector: 'app-add-form',
   templateUrl: './add-form.component.html',
@@ -15,12 +16,13 @@ export class AddFormComponent {
   productResult: any = {};
   categories: Category[] = [];
   categoriesNames: string[] = [];
-  router: any;
+  isLoading:boolean=false
 
   constructor(
     private fb: FormBuilder,
     private prodService: CrudProductsService,
-    private loc: Location
+    private router:Router,
+    private cdr:ChangeDetectorRef
   ) {}
   ngOnInit() {
     this.addProductForm = this.fb.group({
@@ -99,8 +101,12 @@ export class AddFormComponent {
     });
   }
 
+
+  @Output() productAdded = new EventEmitter<Product>();
+
   onSubmit() {
     this.flag = false;
+    this.isLoading = true
     if (this.addProductForm.valid) {
       this.productResult = {
         title: this.title?.value,
@@ -113,14 +119,18 @@ export class AddFormComponent {
           count: this.ratingCount?.value,
         },
       };
+
+
       this.prodService.createProduct(this.productResult).subscribe(
         (data) => {
           this.flag = true;
-          // window.location.replace('/admin/products')
-          this.router.navigate('admin/products/add');
+          window.location.replace('admin/products')
+          // this.router.navigate(['admin/products']);
+          this.isLoading = false
         },
         (err) => {
-          console.log(err);
+          this.isLoading = false
+
         }
       );
       this.addProductForm.reset();
@@ -135,6 +145,8 @@ export class AddFormComponent {
       setTimeout(() => {
         this.flag = false;
       }, 500);
+
     }
+
   }
 }

@@ -74,7 +74,6 @@ falg =false
 ngAfterViewChecked(): void {
     setTimeout(() => {
         this.currentPage =this.pagination.currentPage
-
     },0)
   }
 
