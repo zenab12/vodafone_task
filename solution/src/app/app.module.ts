@@ -28,9 +28,6 @@ import { adminAuth } from './admin-auth.guard';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-
-    UserModule,
-    AdminModule
   ],
   providers: [
       authGuard,
