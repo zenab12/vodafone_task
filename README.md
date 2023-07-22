@@ -1,7 +1,7 @@
 
 ### The project is e-commerce 🛍️🛒 website aims to make two interfaces one for admin and another for user.
 ## Table of Contents 📑
-  - [Getting Started](#Getting_Started)
+  - [Getting Started](#Getting-Started)
      - [Prerequisites](#Prerequisites)
      - [Installation](#Installation)
   - [Usage](Usage)
@@ -11,11 +11,11 @@
   - [License](License)
   - [Acknowledgments](Acknowledgments)
 
-# Getting_Started 🔑
+### Getting Started 🔑
 
 To get the project up and running on your local machine, follow the instructions below.
 
-# Prerequisites 🔱 
+### Prerequisites 🔱 
     
 Before you begin, ensure you have the following installed on your development machine:
 
