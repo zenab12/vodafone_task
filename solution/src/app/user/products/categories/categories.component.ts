@@ -33,7 +33,7 @@ ngDoCheck(){
       this.isLoading=false
     }
 
-  },4000)
+  },100)
   }
 
   getProductsByCategory(category:string){

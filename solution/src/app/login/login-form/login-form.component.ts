@@ -63,9 +63,12 @@ export class LoginFormComponent implements OnInit {
         this.loginResult.password == 'user'
       ) {
         this.router.navigateByUrl('/user');
+        localStorage.setItem('token', 'user')
       }else if(this.loginResult.username == 'admin' && this.loginResult.password=='admin' )
       {
         this.router.navigateByUrl('/admin');
+        localStorage.setItem('token', 'admin')
+
       }else
       {
       this.errMessage = 'invalid username or password'

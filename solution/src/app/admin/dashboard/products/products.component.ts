@@ -15,6 +15,7 @@ export class ProductsComponent implements DoCheck,OnInit,AfterViewChecked {
   showParent: boolean = true;
   products: Product[] = [];
   itemsPerPage: number = 6;
+  isLoading:boolean=true
   @ViewChild(PaginationComponent) pagination!:PaginationComponent
   currentPage: number = 1
 
@@ -52,6 +53,10 @@ export class ProductsComponent implements DoCheck,OnInit,AfterViewChecked {
       this.productService.getProducts().subscribe(
         (products:any) => {
           this.products = JSON.parse(JSON.stringify(products));
+          setTimeout(()=>{
+
+            this.isLoading=false
+          },2000)
         },
         (error) => {
           // Handle error

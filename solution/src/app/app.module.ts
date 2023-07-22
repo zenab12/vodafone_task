@@ -13,6 +13,7 @@ import { AdminModule } from './admin/admin.module';
 import { ErrorComponent } from './pages/error/error.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedDataService } from './services/sharedService.service';
+import { authGuard } from './auth.guard';
 // import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { SharedDataService } from './services/sharedService.service';
     AdminModule
   ],
   providers: [
+      authGuard,
      CrudProductsService,
      { provide:ErrorHandler,
       useClass:ErrorHandlerService }

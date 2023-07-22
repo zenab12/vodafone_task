@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './dashboard/sidebar/sidebar.component';
 import { PaginationComponent } from './dashboard/products/pagination/pagination.component';
+import { LoaderComponent } from './dashboard/products/loader/loader.component';
 
 const routes: Routes = [
   {
@@ -43,6 +44,7 @@ const routes: Routes = [
     EditFormComponent,
     SidebarComponent,
     PaginationComponent,
+    LoaderComponent,
   ],
   imports: [CommonModule, ReactiveFormsModule, RouterModule.forChild(routes)],
   exports: [RouterModule],

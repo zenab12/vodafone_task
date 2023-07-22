@@ -30,8 +30,8 @@ export class ProductsComponent implements AfterViewInit,OnInit,AfterViewChecked{
     console.log(this.categories)
   this.productService.getProducts().subscribe((data:any)=>{
         this.products.push(...data)
+         this.loading =false
 
-          this.loading =false
         }
 
         )
