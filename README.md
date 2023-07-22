@@ -12,18 +12,15 @@
   - [Acknowledgments](#Acknowledgments)
 
 ### Getting Started 🔑
-
 To get the project up and running on your local machine, follow the instructions below.
 
 ### Prerequisites 🔱 
-    
 Before you begin, ensure you have the following installed on your development machine:
 
   - Node.js - Download and install the latest version of Node.js, which includes `npm (Node Package Manager)`.
   - Angular CLI - Install the Angular Command Line Interface globally by running `npm install -g @angular/cli`.
 
 # Installation 🌐
-
  - Clone this repository to your local machine using:
 
     ```
@@ -39,7 +36,6 @@ Before you begin, ensure you have the following installed on your development ma
     ```
 
 ### Usage 🚀
-
 - After completing the installation, you can run the project locally with the following command:
   
   ```
