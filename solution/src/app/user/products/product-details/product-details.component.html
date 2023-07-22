@@ -1,15 +1,22 @@
-<div class="container">
+<app-navbar></app-navbar>
 
+<div class="container">
 <div class="product">
   <img [src]="product?.image" [alt]="product?.title" class="product-image">
   <div class="product-details">
-  <h3 class="product-name">{{ product?.title }}</h3>
-  <p class="product-description">{{ product?.description }}</p>
-  <p class="product-price">{{ product?.price | currency }}</p>
+  <h3 class="product-name">  <span class="title">Name:</span>    {{ product?.title }}</h3>
+  <h4 class="product-name">  <span class="title">Category:</span>    {{ product?.category }}</h4>
+  <p class="product-description">   <span class="title"> Description:</span>
+     {{ product?.description }}</p>
+  <p class="product-price">   <span class="title">Product Price:</span>
+     {{ product?.price | currency }}</p>
+  <span class="title">Rating Stars and Count of users:</span>
   <div class="product-rank">
     <div class="rating"><img src="../../../assets/images/star.svg"> <span> {{product.rating.rate}} </span></div>
     <div class="rating"><img src="../../../assets/images/user.svg"> <span>{{product.rating.count}}</span></div>
   </div>
 </div>
 </div>
+    <button routerLink="/user/products">Back</button>
 </div>
+<app-footer></app-footer>

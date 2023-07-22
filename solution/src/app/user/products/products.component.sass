@@ -1,15 +1,18 @@
 @import "../../../assets/variables"
 
 .products
-  width:70%
+  width:80%
   padding: 2rem 0
   margin: auto
+
   .grid
       display: grid
       grid-template-columns: repeat(3,1fr)
       gap:1.5rem
-      justify-content: center
+      justify-items: center
       max-width: 100%
+
+
 
       .product
         &-card
@@ -17,6 +20,8 @@
           border-radius: 47% 47% 0 0
           padding:20px
           max-width: 350px
+          width:300px
+          min-width: 250px
           position: relative
 
         &-image
@@ -55,6 +60,7 @@
           position: absolute
           top:-10px
           right:0px
+          min-width: 70px
           background: $main-color-dark
           padding:30px 10px
           border-radius: 50%
@@ -91,12 +97,29 @@
     color: $main-color-dark
     padding:5px
     border-radius: 5px
-    margin: 30px auto
+    margin: 1rem auto
+    margin-bottom: 4rem
     display: block
     width:70%
     border:3px solid $main-color-dark
     padding: 15px
     font-size: 1rem
+  .categories
+      display: none
+  button
+    background: $main-color
+    color: #fff
+    border: none
+    border-radius: 4px
+    padding: 8px 16px
+    margin: auto
+    margin-top: 1rem
+    width: 100%
+    cursor: pointer
+    transition: background-color 0.3s ease
+
+    &:hover
+      background-color: darken($main-color, 10%)
 
 
 @media(max-width: 767px)
@@ -104,3 +127,21 @@
     width:90%
     .grid
       grid-template-columns: repeat(1,1fr)
+@media(min-width: 768px) and (max-width: 1024px)
+  .products
+    width:80%
+    .grid
+      grid-template-columns: repeat(2,1fr)
+
+.grid-container
+  display: grid
+  gap: inherit
+  justify-items: inherit
+  grid-template-columns: inherit
+  width:60%
+  margin: auto
+
+
+@media (max-width: 1204px)
+  .grid-container
+    width:100%

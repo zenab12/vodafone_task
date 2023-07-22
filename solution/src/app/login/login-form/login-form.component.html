@@ -34,9 +34,7 @@
         id="password"
         formControlName="password"
         placeholder="Enter your password"
-        [ngClass]="{
-          error: password?.invalid && (password?.dirty || password?.touched)
-        }"
+        [ngClass]="{ error: password?.invalid && (password?.dirty || password?.touched)}"
       />
       <div class="password-icon">
         <p (click)="togglePassword()" *ngIf="!isShow">

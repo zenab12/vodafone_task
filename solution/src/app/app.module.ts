@@ -12,7 +12,8 @@ import { UserModule } from './user/user.module';
 import { AdminModule } from './admin/admin.module';
 import { ErrorComponent } from './pages/error/error.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { SharedDataService } from './services/sharedService.service';
+import { LoaderComponent } from './loader/loader.component';
 // import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { ProductDetailsComponent } from './products/product-details/product-deta
     LoginComponent,
     LoginFormComponent,
     ErrorComponent,
-    ProductDetailsComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,6 +36,7 @@ import { ProductDetailsComponent } from './products/product-details/product-deta
      CrudProductsService,
      { provide:ErrorHandler,
       useClass:ErrorHandlerService }
+      ,SharedDataService
   ],
   bootstrap: [AppComponent]
 })

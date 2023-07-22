@@ -6,9 +6,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './home/header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
-import { FormsModule, NgModel } from '@angular/forms';
+import { FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
 import { CategoriesComponent } from './products/categories/categories.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
+import { PaginationComponent } from './products/pagination/pagination.component';
+import { ProductskeletonComponent } from './products/productskeleton/productskeleton.component';
 
 const routes: Routes = [
   {
@@ -28,10 +30,12 @@ const routes: Routes = [
     NavbarComponent,
     FooterComponent,
     CategoriesComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    PaginationComponent,
+    ProductskeletonComponent
 
   ],
-  imports: [CommonModule,FormsModule,RouterModule.forChild(routes)],
+  imports: [CommonModule,FormsModule,ReactiveFormsModule,RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class UserModule { }

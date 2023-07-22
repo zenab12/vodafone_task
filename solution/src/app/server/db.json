@@ -245,22 +245,22 @@
     {
       "id": 1,
       "name": "electronics",
-      "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg"
+      "image": "../assets/images/el.png"
     },
     {
       "id": 2,
       "name": "jewelery",
-      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+      "image": "../assets/images/jw.png"
     },
     {
       "id": 3,
       "name": "men's clothing",
-      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+      "image": "../assets/images/ts.png"
     },
     {
       "id": 4,
       "name": "women's clothing",
-      "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg"
+      "image": "../assets/images/wo.png"
     }
   ]
 }

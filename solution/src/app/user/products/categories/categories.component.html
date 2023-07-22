@@ -1,15 +1,16 @@
-<section class="categories">
+<section class="categories" >
   <h2>All Categories</h2>
-
   <div class="container">
-    <div class="card" *ngFor="let category of categories">
+    <div class="card" *ngFor="let category of categories;index as i">
       <div class="card-photo" (click)="getProductsByCategory(category.name)">
         <img src={{category.image}} alt=""/>
       </div>
       <div class="card-body">
-          <h3>{{category.name}}</h3>
-          <p>15 items</p>
+        <h3>{{category.name}}</h3>
+   <p>{{ categoryProductLengthMap[category.name] }} items</p>
       </div>
     </div>
- </div>
+</div>
+
+
 </section>
