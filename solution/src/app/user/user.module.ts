@@ -9,7 +9,6 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule, NgModel, ReactiveFormsModule } from '@angular/forms';
 import { CategoriesComponent } from './products/categories/categories.component';
 import { ProductDetailsComponent } from './products/product-details/product-details.component';
-import { PaginationComponent } from './products/pagination/pagination.component';
 import { ProductskeletonComponent } from './products/productskeleton/productskeleton.component';
 import { LoaderComponent } from './loader/loader.component';
 
@@ -32,7 +31,6 @@ const routes: Routes = [
     FooterComponent,
     CategoriesComponent,
     ProductDetailsComponent,
-    PaginationComponent,
     ProductskeletonComponent,
     LoaderComponent
 

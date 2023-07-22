@@ -8,6 +8,7 @@ import { CrudProductsService } from './crud-products.service';
 export class SharedDataService implements OnInit{
   private products: Product[] = [];
   constructor(private prodService:CrudProductsService){}
+  //get filtered products from category componetnt instead viewchild as it is not working
   ngOnInit(): void {
     this.prodService.getProducts().subscribe((data:any)=>this.products.push(...data))
   }
