@@ -25,7 +25,6 @@ Before you begin, ensure you have the following installed on your development ma
 <h3 id="installation">installation 🌐</h3>
  
  Clone this repository to your local machine using:
-
     ```
     git clone https://github.com/zenab12/vodafone_task.git
     ```
