@@ -68,7 +68,7 @@ Install the project dependencies:
   - **Authentication** : Login page that sure you are admin or user and based on your role you will get user or admin interface
   - **LazyLoading** : the project consist of Three modules one for user , one for admin and the other one for app
   - **Validation** : each form has validation using reactive form validators (login, add product ,edit ptoduct) forms
-  - **Authentication**: using guard in angular i check the user authorized to see routes or not
+  - **Authorization**: using guard in angular i check the user authorized to see routes or not
   - **services and observables**: using angular httpclient module I make requests to FakeAPISTore
   - **JSON Server**: using json server with fake store api to make crud operations in new products
   - **forms**: using reactive form as it has super power in handling form and validation of it
