@@ -12,7 +12,7 @@
   - [license](#license)
   - [acknowledgments](#acknowledgments)
 
-### getting started 🔑
+### getting-started 🔑
 To get the project up and running on your local machine, follow the instructions below.
 
 ### prerequisites 🔱 
