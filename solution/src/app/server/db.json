@@ -215,42 +215,6 @@
         "rate": 4.7,
         "count": 130
       }
-    },
-    {
-      "title": "fada",
-      "price": "24",
-      "description": "ff",
-      "image": "aas",
-      "category": "electronics",
-      "rating": {
-        "rate": "4",
-        "count": "22"
-      },
-      "id": 20
-    },
-    {
-      "title": "laka",
-      "price": "234",
-      "description": "df",
-      "image": "as",
-      "category": "jewelery",
-      "rating": {
-        "rate": "3",
-        "count": "33"
-      },
-      "id": 21
-    },
-    {
-      "title": "okaa",
-      "price": "452",
-      "description": "fg",
-      "image": "dfg",
-      "category": "jewelery",
-      "rating": {
-        "rate": "5",
-        "count": "23"
-      },
-      "id": 22
     }
   ],
   "categories": [
