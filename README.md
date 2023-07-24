@@ -120,6 +120,7 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 Please ensure your pull request follows the project's coding conventions and includes relevant tests.
 
 <h3 id="license">License 💼</h3>
+
 [@vodafone](https://github.com/Vodafone)
 
 <h3 id="acknowledgments"> Acknowledgments 💫🌟</h3>
